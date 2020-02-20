@@ -1,0 +1,65 @@
+HTML Attributes
+Below is an alphabetical list of some attributes often used in HTML, which you will learn more about in this tutorial:
+
+Attribute	Description
+alt		Specifies an alternative text for an image, when the image cannot 		be displayed
+disabled	Specifies that an input element should be disabled
+href		Specifies the URL (web address) for a link
+id		Specifies a unique id for an element
+src		Specifies the URL (web address) for an image
+style		Specifies an inline CSS style for an element
+title		Specifies extra information about an element (displayed as a tooltip)
+--------------------------------------------------------------------------------------------
+HTML Tag Reference
+W3Schools' tag reference contains additional information about these tags and their attributes.
+
+You will learn more about HTML tags and attributes in the next chapters of this tutorial.
+
+Tag		Description
+<html>		Defines the root of an HTML document
+<body>		Defines the document's body
+<head>		A container for all the head elements (title, scripts, styles, meta 		information, and 	more)
+<h1> to <h6>	Defines HTML headings
+<hr>		Defines a thematic change in the content
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+--------------------------------------------------------------------------------------------
