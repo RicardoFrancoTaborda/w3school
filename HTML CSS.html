@@ -3,15 +3,49 @@
 
 <body>
 
-<h3>las imagenes tambien pueden ser links</h3>
+<h2>boton como link</h2>
+<p>click en el boton</p>
+<button onclick="document.location = 'primer.html'">Primer HTML</button>
 
-<p>click en la imagen</p>
-<a href="primer.html">
-	<!--se pone en la pagina por default a la pagina que desea que se dirija-->
-	<img src="fotografias/azul.gif" alt="primer.html"
-	style="width:42px;height:42px;border:0">
+<h2>Link con titulo</h2>
+<p>al momento de poner el mouse sobre el link aparece a que pagina se dirige como informacion extra</p>
+<a href="primer.html" title="Vamos a el primer html"> visitanos </a>
 
-</a>
+<h2>paginas externas</h2>
+<p>se pone la direccion completa</p>
+<a href="https://www.atlnacional.com.co/">Atletico Nacional</a>
+
+<hr>
+
+<style>
+	a:link{
+		color:pink;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:visited{
+		color:blue;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:hover{
+		color:red;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a:active{
+		color:yellow;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+</style>
+
+<h2>Color en el link</h2>
+<p>puede cambiar el color del link segun su uso, sin visita verde,visitado azul,  flotando con el mouse negro y activar cyan</p>
+<a href="primer.html" target="_blank">Mi princesa saliendo de la ducha</a>
+<hr>
+	
+
 
 
 </body>
