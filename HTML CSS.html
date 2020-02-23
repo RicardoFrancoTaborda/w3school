@@ -1,43 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<style>
-		/*este estilo asigna todas las imagenes al 100%
-		*/
-		<img {
-			width: 100%;
-		}
-	</style>
-</head>
+
 <body>
 
-	
+<h2>Mapa de imagenes</h2>
+<p>ventana emergente de funcion q indica que estas haciendo</p>
 
-	<h2>Mapa de imagenes</h2>
-	
-	<!--CUADRADO
-	Tener en cuenta que las  coordenadas se dividen en
-	origen en X y origen en Y,  despues hasta donde va en X y hasta donde va en Y, esto para un cuadrado-->
-
-	<p>Vamos a darle clik en diferentes partes aves, sol ,campo</p>
-
-	<img src="fotografias/paraiso.jpg" alt="El paraiso" usemap="#paraiso" width="350" height="300">
-	<map name="paraiso">
-
-	
-	<area shape="rect" coords="0,0,350,70" alt="Aves" href="https://www.nationalgeographic.com.es/medio/2018/02/27/aguila__1280x720.jpg">
-
-	<!--CIRCULO
-	Tener en cuenta que las  coordenadas se dividen en
-	origen en X y origen en Y, 
-	cuando es un circulo el eje X y Y dibujan donde se origina  el centro y el radio del tamaño de el circulo es agregado en tercer coordenada-->
-
-		<area shape="circle" coords="175,90,20" alt="SOL" href="https://cdn.hispantv.com/hispanmedia/files/images/thumbnail/20181130/07085311_xl.jpg">
+	<h2>La casa</h2>
 		
-		<area shape="rect" coords="0,125,350,300" alt="arboles" href="https://image.freepik.com/foto-gratis/campo-cesped-nubes_1112-621.jpg">
 
+		<img src="fotografias/mural de la casa.jpg" alt="El paraiso" usemap="#casa" width="300" height="300">
+
+	<map name="casa">
+	<area shape="rect" coords="75,90,175,250" onclick="elVerde()">
 	</map>
-	
+	<script>
+		function elVerde(){
+			alert("cielo y montaña")
+		}
+	</script>
 
 </body>
 </html>
