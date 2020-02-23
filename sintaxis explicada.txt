@@ -115,14 +115,20 @@ HTML Link Tags
 Tag	Description
 <a>	Defines a hyperlink
 
+--------------------------------------------------------------------------------------------
+HTML Images Syntax
+In HTML, images are defined with the <img> tag.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The src attribute specifies the URL (web address) of the image:
+
+
 
 --------------------------------------------------------------------------------------------
 
-
-
---------------------------------------------------------------------------------------------
-
-
+pollito== https://i.pinimg.com/originals/d6/7b/af/d67baffb519cab66bf603e565d9298f1.gif
+gato== 	  http://1.bp.blogspot.com/-uUQQmjsgbUs/T4fanvqOCWI/AAAAAAAANKg/2VrdSTo8Pls/s640/gatitos+gif+m%C3%B3vil+(17).gif
 
 --------------------------------------------------------------------------------------------
 
