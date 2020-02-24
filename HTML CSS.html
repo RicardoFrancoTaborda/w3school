@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		table,th,td {
+			border: 1px solid black;
+			/*border-collapse: collapse; */
+			
+		}
+		table {
+			border-spacing: 15px;
+		}
+		th, td {
+			padding: 10px;
+		}
+		td {
+			text-align: left;
+		}
+	</style>
 </head>
+<body>
+	<h2>Tabla de html basica</h2>
+	<table style="width: 80%">
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+			<th>Lugar nacimiento</th>
+		</tr>
+		<tr>
+			<td>Ricardo</td>
+			<td>Franco</td>
+			<td>35</td>
+			<td>Antioquia</td>
+		</tr>
+		<tr>
+			<td>Eliana</td>
+			<td>Solorzano</td>
+			<td>30</td>
+			<td>Purificacion</td>
+		</tr>
+		<tr>
+			<td>Victoria</td>
+			<td>Franco</td>
+			<td>3</td>
+			<td>Ibague</td>
+		</tr>
 
-<h2>Elementos de pintura</h2>
-<picture>
-	<!--
-	<source media="(min-width:20px)" srcset="fotografias/azul.gif">
-	-->
-	<source media="(min-width:259px)" scrset="fotografias/Lobo.png">
-	
-	<img src="fotografias/paraiso.jpg" style="width:auto;">
-
-</picture>
-<p>Cambie el tamaño del navegador para ver diferentes versiones de la carga de imágenes en diferentes tamaños de ventana gráfica.
-El navegador busca el primer elemento fuente donde la consulta de medios coincide con el ancho de la ventana gráfica actual del usuario,
-y obtiene la imagen especificada en el atributo srcset. </p>
-
-<p> El elemento img se requiere como la última etiqueta secundaria del bloque de declaración de imagen.
-El elemento img se usa para proporcionar compatibilidad con versiones anteriores para navegadores que no admiten el elemento de imagen, o si ninguna de las etiquetas de origen coincide.</p>
-	<p><strong>Nota:</strong>El elemento de imagen no es compatible con IE12 y versiones anteriores o Safari 9.0 y versiones anteriores.</p>
+	</table>
 </body>
 </html>
