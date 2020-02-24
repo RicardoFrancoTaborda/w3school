@@ -1,126 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		table,th,td {
-			border: 1px solid black;
-			border-collapse: collapse; 
-			
-		}
-		th, td {
-			padding: 5px;
-		}
-		td {
-			text-align: left;
-		}
-		table#t01{
-			width: 100%;
-			background-color: pink;
-		}
-		table#t01 tr:nth-child(even){
-			background-color: gray;
-		}
-		table#t01 tr:nth-child(odd){
-			background-color: pink;
-		}
-		table#t02 th{
-			background-color: Dodgerblue;
-			color: white;
 
-		}
-		table#t02{
-			width: 100%;
-			background-color: green;
-		}
-		table#t03{
-			width: 100%;
-			background-color: blue;
-		}
-		table#t03 th{
-			background-color: blue;
-			color: white;
-		}
-		table#t03 tr:nth-child(even){
-			background-color: gray;
-		}
-		table#t03 tr:nth-child(odd){
-			background-color: brown;
-		}
-	</style>
 </head>
 <body>
-	<h2>Tabla de html basica</h2>
-	<table id="t01" 
-	style="width: 80%">
-		<tr>
-			<th>Nombre completo</th>
-			<th colspan="2">Telefono</th>
-		</tr>
-		<tr>
-			<td>Ricardo Franco</td>
-			<td>3154880412</td>
-			<td>3159874652</td>
-		</tr>
-		<tr>
-			<td>Eliana Solorzano</td>
-			<td>3201235698</td>
-			<td>3165987456</td>
-		</tr>
-		<tr>
-			<td>Victoria Franco</td>
-			<td>3269874563</td>
-			<td>3698521596</td>
-		</tr>
+	<h2>Listas y sus diferentes formas</h2>
+	<ul style="list-style-type: disc;">
+		<li>cafe</li>
+		<ul>
+		<li>Cargado y negro</li>
+		<li>sin azucar</li>
+		<li>con buen azucar</li>
+		</ul>
+		<li>Te</li>
+		<li>Leche</li>
+	</ul>
 
-	</table>
+	<ul style="list-style-type: circle;">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ul>
 
-<hr>
-<hr>
+	<ul style="list-style-type: square;">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ul>
 
 
-	<h2>Tabla de html compuesta</h2>
-	<table id="t02"
-	style="width: 100%">
-		<tr>
-			<th>Nombre completo</th>
-			<td>Ricardo Franco</td>
-		</tr>
-		<tr>
-			<th rowspan="2">Telefono</td>
-			<td>3159874652</td>
-		</tr>
-		<tr>
-			<td>3154880412</td>
-		</tr>
-		
-	</table>
+	<ul style="list-style-type: none;">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ul>
+	<hr>
 
-<hr>
-<hr>
-<hr>
+	<ol type="1">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ol>
+	
+	<ol start="50">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+
+	<ol type="A">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ol>
+
+	<ol type="a">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ol>
+
+	<ol type="I">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ol>
+
+	<ol type="i">
+		<li>cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ol>
+	<hr>
+	<dl>
+		<dt>cafe</dt>
+		<dd>- negro y caliente</dd>
+		<dt>leche</dt>
+		<dd>*fria</dd>
+	</dl>
 
 
-	<h2>Tabla de html definida</h2>
-	<table id="t03"
-	style="width: 80%">
-		<caption><strong>Datos Personales</strong></caption>
-		<tr>
-			<th>Nombre completo</th>
-			<th colspan="2">Telefono</th>
-		</tr>
-		<tr>
-			<td>Ricardo Franco</td>
-			<td>3154880412</td>
-			<td>3159874652</td>
-		</tr>
-		<tr>
-			<td>Eliana Solorzano</td>
-			<td>3201235698</td>
-			<td>3165987456</td>
-		</tr>
-		
 
-	</table>
+	
 </body>
 
 
