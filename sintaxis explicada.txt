@@ -162,7 +162,10 @@ The coordinates 34, 44 is located 34 pixels from the left margin and 44 pixels f
 
 --------------------------------------------------------------------------------------------
 
-
+Chapter Summary
+Use the HTML <map> element to define an image-map
+Use the HTML <area> element to define the clickable areas in the image-map
+Use the HTML <img>'s element usemap attribute to point to an image-map
 
 
 --------------------------------------------------------------------------------------------
