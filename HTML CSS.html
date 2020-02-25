@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<style>
-		#encabezado {
-			background-color: lightblue;
-			color: blue;
-			padding: 30px;
-			text-align: center;
-		}
-		.ciudad {
-			background-color: green;
-			color: black;
-			padding: 15px;
-		}
-	</style>
+
 </head>
 <body>
 
-	<h2>Diferencias entre Clases e Id</h2>	
+	<h2>HTML Iframes</h2>	
 
-	<p>el id es unico y y las clases se pueden usar en repetidas ocasiones </p>
+	<p>se puede usar con css las propiedades de width y heigth</p>
 
-	<h1 id="encabezado">Antioquia</h1>
-	<h2 class="ciudad">Medellin</h2>
-	<p>La capital del departamento de antioquia es medellin</p>
+	<iframe src="primer.html" style="height:200px;width:400px;"></iframe>
 
-	<h1 id="cambiar">Hola  mundo</h1>
-	<button onclick="displayResult()">Cambia texto</button>
+	<hr>
 
-	<script>
-		function displayResult(){
-			document.getElementById("cambiar").innerHTML="Que tengas un buen dia";
-		}
-	</script>
+	<iframe src="primer.html" style="border:none;"></iframe>
+	<hr>
 
+	<iframe src="primer.html" style="border:3px solid green;"></iframe>
 
-
-
-
-
-	
 </body>
 
 
