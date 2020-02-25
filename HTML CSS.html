@@ -1,85 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333333;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+</style>
 
 </head>
 <body>
-	<h2>Listas y sus diferentes formas</h2>
-	<ul style="list-style-type: disc;">
-		<li>cafe</li>
-		<ul>
-		<li>Cargado y negro</li>
-		<li>sin azucar</li>
-		<li>con buen azucar</li>
-		</ul>
-		<li>Te</li>
-		<li>Leche</li>
-	</ul>
-
-	<ul style="list-style-type: circle;">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ul>
-
-	<ul style="list-style-type: square;">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ul>
-
-
-	<ul style="list-style-type: none;">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ul>
-	<hr>
-
-	<ol type="1">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ol>
+	<h2>Menu de navegacion</h2>
+	<p>Usaremos CSS para darle estilos a las listas horizontallmente para crear el menu de navegacion</p>
 	
-	<ol start="50">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-
-	<ol type="A">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ol>
-
-	<ol type="a">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ol>
-
-	<ol type="I">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ol>
-
-	<ol type="i">
-		<li>cafe</li>
-		<li>Te</li>
-		<li>Leche</li>
-	</ol>
-	<hr>
-	<dl>
-		<dt>cafe</dt>
-		<dd>- negro y caliente</dd>
-		<dt>leche</dt>
-		<dd>*fria</dd>
-	</dl>
-
-
-
+	<ul>
+		<li><a href="#Inicio">Inicio</a></li>
+		<li><a href="#Tatuajes">Tatuajes</a></li>
+		<li><a href="#Piercings">Piercings</a></li>
+		<li><a href="#Contactanos">Contactanos</a></li>
+	</ul>
 	
 </body>
 
