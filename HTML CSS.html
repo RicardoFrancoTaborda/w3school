@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head> 
+	<style>
+		#encabezado {
+			background-color: lightblue;
+			color: blue;
+			padding: 30px;
+			text-align: center;
+		}
+		.ciudad {
+			background-color: green;
+			color: black;
+			padding: 15px;
+		}
+	</style>
 </head>
 <body>
-	<h2>usando los atributos de clase  de javascript</h2>	
-	<p>Click en el boton para que los elementos de laclase ciudad sean cocultos con javascript </p>
 
-	<button onclick="myFunction()">Ocultar elementos</button>
+	<h2>Diferencias entre Clases e Id</h2>	
 
+	<p>el id es unico y y las clases se pueden usar en repetidas ocasiones </p>
+
+	<h1 id="encabezado">Antioquia</h1>
 	<h2 class="ciudad">Medellin</h2>
-	<p>Capital de antioquia</p>
+	<p>La capital del departamento de antioquia es medellin</p>
 
-	<h2 class="ciudad">Bogota</h2>
-	<p>Capital de colombia</p>
+	<h1 id="cambiar">Hola  mundo</h1>
+	<button onclick="displayResult()">Cambia texto</button>
 
-	<h2 class="ciudad">cali</h2>
-	<p>Capital del valle del cauca</p>
+	<script>
+		function displayResult(){
+			document.getElementById("cambiar").innerHTML="Que tengas un buen dia";
+		}
+	</script>
+
+
+
+
+
 
 	
-	<script>
-		function myFunction() {
-			var x=document.getElementsByClassName("ciudad");
-			for (var i = 0;i <x.length; i++) {
-				x[i].style.display="none";
-			}
-		}
-		
-	</script>
 </body>
 
 
