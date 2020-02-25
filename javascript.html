@@ -5,48 +5,30 @@
 	<title></title>
 </head>
 <body>
-	<h2>Usaremos javascript para cambiar el texto</h2>
-<p>escribiremos hola javascript dentro de un elemento HTML
-id="demo":</p>
+	<script>
+		function bombillo(sw){
+			var pic;
+			if(sw == 0){
+				pic ="fotografias/amarillo.gif"
+			} else{
+				pic="fotografias/azul.gif"
+			}
+			document.getElementById('Imagen').src=pic;
+		}
+	</script>
 
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML="Mi Princesa hermosa";
-</script>
-<hr>
-
-<h1>mi primer javascript</h1>
-
-<p>cambiaremos el contenido del elemento</p>
-<button type="button" onclick="boton()">dale click</button>
-<p style="color:white; background-color: Dodgerblue;" 
-	id="demos">veremos como cambia</p>
-<script>
-
-
-	function boton(){
-
-		document.getElementById("demos").innerHTML="Mi princesa y mi esposa lo doy todo por ellas";
-	}
-</script>
-<hr>
-
-<h1>Usando javascript</h1>
-<p id="cambio">veremos como puede javascript cambiar el estio de un html</p>
+	<img id="Imagen" src="fotografias/amarillo.gif" width="100" width="180">
+	<p>
+		<button type="button" onclick="bombillo(1)">Azul</button>
+		<button type="button" onclick="bombillo(0)">Amarillo</button>
+	</p>
+	<h2>Usar una ruta de archivo URL completa</h2>
+	<img src="http://sitio.losdelsur.net/wp-content/uploads/2018/11/website.png" alt="Los Del Sur" style="width:300px">
+	<p>lo ideal es usar las imagenes q estan en el misma carpeta </p>
 
 
-<script>
-	function myFunction(){
-		document.getElementById("cambio").style.fontSize="25px";
-		document.getElementById("cambio").style.color="white";
-		document.getElementById("cambio").style.backgroundColor="green";
-	}
-
-</script>
 
 
-<button type="button" onclick="myFunction()">aceptar</button>
 
 
 
