@@ -228,13 +228,25 @@ List items can contain other HTML elements
 Use the CSS property float:left or display:inline to display a list horizontally
 
 --------------------------------------------------------------------------------------------
-
+HTML List Tags
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
 
 --------------------------------------------------------------------------------------------
-
+HTML Grouping Tags
+Tag	Description
+<div>	Defines a section in a document (block-level)
+<span>	Defines a section in a document (inline)
 
 --------------------------------------------------------------------------------------------
-
+HTML iframe Tag
+Tag	Description
+<iframe>	Defines an inline frame
 
 --------------------------------------------------------------------------------------------
 
