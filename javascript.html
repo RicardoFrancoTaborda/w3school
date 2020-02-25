@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Usaremos javascript para cambiar el texto</h2>
+<p>escribiremos hola javascript dentro de un elemento HTML
+id="demo":</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML="Mi Princesa hermosa";
+</script>
+<hr>
+
+<h1>mi primer javascript</h1>
+
+<p>cambiaremos el contenido del elemento</p>
+<button type="button" onclick="boton()">dale click</button>
+<p style="color:white; background-color: Dodgerblue;" 
+	id="demos">veremos como cambia</p>
+<script>
+
+
+	function boton(){
+
+		document.getElementById("demos").innerHTML="Mi princesa y mi esposa lo doy todo por ellas";
+	}
+</script>
+<hr>
+
+<h1>Usando javascript</h1>
+<p id="cambio">veremos como puede javascript cambiar el estio de un html</p>
+
+
+<script>
+	function myFunction(){
+		document.getElementById("cambio").style.fontSize="25px";
+		document.getElementById("cambio").style.color="white";
+		document.getElementById("cambio").style.backgroundColor="green";
+	}
+
+</script>
+
+
+<button type="button" onclick="myFunction()">aceptar</button>
+
+
+
+
+</body>
+</html>
