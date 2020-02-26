@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
+<HEAD>
 <meta name="viewport" content="width=device-width, initial-scale=1;">
+<style> 
+* {
+	box-sizing: border-box;
+}
+.izquierda {
+	background-color: #2196f3;
+	padding: 20px;
+	float: left;
+	width: 20%;
+}
+.menu {
+	background-color: #f1f1f1;
+	padding: 20px;
+	float: left;
+	width: 60%;
+}
+.derecha {
+	background-color: #4CAF50;
+	padding: 20px;
+	float: left;
+	width: 20%,
+}
+@media screen and (max-width: 800px){
+	.izquierda,.menu, .derecha {
+		width: 100%;
+	}
+}
+</style>
 
 <body>
-	<h1 style="font-size: 10vw;">Texto responsive</h1>
-	<p style="font-size: 5vw">Cambie el tamaño de la ventana del navegador para ver cómo se escala el tamaño del texto.</p>
-	<p style="font-size: 5VW;">Use la unidad "vw" al cambiar el tamaño del texto. 10vw establecerá el tamaño al 10% del ancho de la ventana gráfica</p>
 	
-	<p> Viewport es el tamaño de la ventana del navegador. 1vw = 1% del ancho de la ventana gráfica. Si la ventana gráfica tiene 50 cm de ancho, 1vw mide 0,5 cm. </p>
+	<p>Asegúrese de alcanzar el punto de interrupción a 800 px al cambiar el tamaño de este marco </p>
+
+	<div class="izquierda">
+		<p>menu izquierdo</p>
+	</div>
+
+	<div class="menu">
+		<p>menu contenido</p>
+	</div>
+	<div class="derecha">
+		<p>menu derecha</p>
+	</div>
+</HEAD>
 </body>
 </html>
