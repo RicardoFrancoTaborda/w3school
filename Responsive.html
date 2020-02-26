@@ -1,74 +1,35 @@
 <!DOCTYPE html>
 <html>
-<HEAD>
+<title>Aprendiendo  CSS</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1;">
-<style> 
-* {
-	box-sizing: border-box;
-}
-.menu {
-	background-color: white;
-	float: left;
-	width: 20%;
-	text-align: center;
-}
-.menu a {
-	background-color: black;
-	padding: 8px;
-	margin-top: 7px;
-	display: block;
-	width: 100%;
-	color: green;
-}
-.main {
-	background-color: green;
-	float: left;
-	width: 60%;
-	padding:22px;
-}
-.derecha {
-	background-color: blue;
-	float: left;
-	width: 20%;
-	padding: 15px;
-	margin-top: 7px;
-	text-align: center;
-}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-@media only screen and (max-width: 620px){
-	.menu, .main, .derecha {
-		width: 100%;
-	}
-}
-</style>
+<div class="w3-container w3-green">
+	<h1>Titulo</h1>
+	<p>Se acomoda al tamaño de la pagina</p>
+</div>	
 
-<body style="font-family: Verdana;color: black;">
-	<div style="background-color: yellow; padding: 15px;text-align: center;">
-		<h1>Hola mundo</h1>
+<div class="w3-row-padding">
+	<div class="w3-third">
+		<h2>medellin</h2>
+		<p>la capital de antioquia tierra de arrieros trabajadores gente camelladora y q no se deja  menospreciar</p>
+		<p>Tierra del equipo mas grande de colombia Atletico Nacional</p>
 	</div>
 
-	<div style="overflow: auto;">
-		<div class="menu">
-			<a href="#">link 1</a>
-			<a href="#">link 2</a>
-			<a href="#">link 3</a>
-			<a href="#">link 4</a>
-		</div>
-
-		<div class="main">
-			<h2>indice</h2>
-			<p>en este lado va toda la informacion q sea necesaria</p>
-		</div>
-
-		<dir class="derecha">
-			<h2>lado derecho</h2>
-			<p>y tendria mas relevancia si se desea aunque no debe ser asi</p>
-		</dir>
+	<div class="w3-third">
+		<h2>cali</h2>
+		<p>la capital del valle del caucatierra de la salsa y de gente q n sepone con cuentos</p>
+		<p>Tierra de un equipo q es de la B</p>
 	</div>
 
-	<dir style="background-color: gray;text-align: center;;padding: 10px;margin-top: 8px;">todos los derechos reservados para mi.</dir>
-	
-	
-</HEAD>
+	<div class="w3-third">
+		<h2>bogota</h2>
+		<p>la capital de colombia y lugar donde hay mas habitantes del pais</p>
+		<p>Tierra del equipo mas grande de colombia Atletico Nacionaltierra donde el equipo mas grande del pais tiene su segunda casa</p>
+	</div>
+</div>
+
 </body>
 </html>
