@@ -1,37 +1,94 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<title>CSS modelo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial,Helvetica sans-serif;
+		}
+
+		header {
+			background-color: #777;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: green;
+		}
+		/*crearemos columnas cajas q estaran entre ellas*/
+
+		nav {
+			float: left;
+			width: 30%;
+			height: 300px;
+			background: #ccc;
+			padding: 20px;
+
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			height: 300px;
+		} 
+		
+		section:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		footer {
+			background-color: #222;
+			padding: 20px;
+			text-align: center;
+			color: white;
+		}
+		
+		/*Responsive layout*/
+		@media(max-width: 600px){
+			nav, article {
+				width: 100%;
+				height:auto;
+			}
+		}
+
+
+	</style>
 </head>
 <body>
-	<script>
-		function bombillo(sw){
-			var pic;
-			if(sw == 0){
-				pic ="fotografias/amarillo.gif"
-			} else{
-				pic="fotografias/azul.gif"
-			}
-			document.getElementById('Imagen').src=pic;
-		}
-	</script>
+	<h2>CSS Layout Float</h2>
+	<p>En este ejemplo, hemos creado un encabezado, dos columnas / cuadros y un pie de página. En pantallas más pequeñas, las columnas se apilarán una encima de la otra. </p>
+<p> Cambie el tamaño de la ventana del navegador para ver el efecto de respuesta (aprenderá más sobre esto en nuestro próximo capítulo - Responsive HTML).</p>
 
-	<img id="Imagen" src="fotografias/amarillo.gif" width="100" width="180">
-	<p>
-		<button type="button" onclick="bombillo(1)">Azul</button>
-		<button type="button" onclick="bombillo(0)">Amarillo</button>
-	</p>
-	<h2>Usar una ruta de archivo URL completa</h2>
-	<img src="http://sitio.losdelsur.net/wp-content/uploads/2018/11/website.png" alt="Los Del Sur" style="width:300px">
-	<p>lo ideal es usar las imagenes q estan en el misma carpeta </p>
-
-
-
-
-
-
-
-
+<header>Ciudades</header>
+<section>
+	<nav>
+		<ul>
+			<li><a href="#">Medellin</li>
+			<li><a href="#">Cali</li>
+			<li><a href="#">Bogota</li>
+		</ul>
+	</nav>
+	<article>
+		<h1>Medellin</h1>
+		<p>Ciudad donde es originario el equipo mas grande del  pais Atletico Nacional</p>
+	</article>
+</section>
+<footer>
+	<p>Vamos NACIONAL DALE CAMPEON !!!</p>
+</footer>
 </body>
 </html>
