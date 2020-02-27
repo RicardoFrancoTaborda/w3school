@@ -3,58 +3,48 @@
 <head>
 	<title></title>
 </head>
-<body>
-	<h2>Llenando formularios en html</h2>
-	<form action="/action_page.php">
-		<label for="nombre">Nombre</label><br/>
-		<input type="text" id="nombre" name="nombre" value="Ricardo"><br/>
-		<label for="apellido">Apellido</label><br/>
-		<input type="text" id="apellido" name="apellido" value="Franco"><br><br>
-		<input type="submit" name="Submit">
-	</form>
-
-	<p>si le das aceptar en el boton enviaras la informacion a la pagna /action_page.php </p>
-
-	<hr>
-	<h2>Radio button</h2>
-	<form>
-		<input type="radio"  id="hombre" name="genero" value="hombre">
-		<label for="hombre">Hombre</label><br>
-		<input type="radio" id="mujer" name="genero" value="mujer">
-		<label for="mujer">Mujer</label><br>
-		<input type="radio" id="otro" name="genero" value="otro">
-		<label for="otro">Otro</label><br>
-	</form>
-	<hr>
-	<h2>The form target attribute</h2>
-
-<p>When submitting this form, the result will be opened in a new browser tab:</p>
-
-<form action="/action_page.php" target="_blank">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-<hr>
-<h2>Ingresando datos</h2>
-<form action="/action_page.phpp">
-	<label for="nombre">Nombre</label><br>
-	<input type="text" id="nombre" name="nombre"><br><br>
-	<input type="submit" name="Submit">
-</form>
-<hr>
+<body style="background-color: green; color: white;">
+	
 <h2>seleccionar elemento</h2>
-<p>como un checkbox</p>
+<p>como un checkbox pero mostrando el tamaño de la eleccion y con posibilidad electiva de mas de 1 elemento</p>
 <form action="/action_page.php">
 	<label for="carros" name="carros"></label>
-	<select id="carros" name="carros">
+	<select id="carros" name="carros" size="4" multiple>
+		<option value="seleccionar">seleccionar</option>
 		<option value="bmw">BMW</option>
 		<option value="mercedez benz">Mercedes benz</option>
 		<option value="ferrari">Ferrari</option>
 	</select>
 	<input type="submit">
 </form>
+<p>presionando la tecla control puedes elegir mas de una opcion</p>
+
+<hr>
+<h2>TExt area</h2>
+<p>ingresar text area</p>
+<form action="/action_page.php">
+	<textarea name="message" rows="5" cols="20"></textarea><!--tambien se puede hacer con codigo css cambiando rows y cols por:"width:200px;heigth:60px;"-->
+	<br><br>
+	<input type="submit" >
+	
+</form>
+<hr>
+<h2>elemento boton</h2>
+
+<button type="button" onclick="alert('somos un aviso en otra ventana')">aceptar</button>
+<hr>
+<h2>agrupando en un cuadro</h2>
+<p>agrupa toda la informacion de un formulario coo un fieldset</p>
+<form action="/action_page.php">
+	<fieldset style="background-color: blue">
+		<legend>Datos personales</legend>
+		<label for="nombre">Nombre</label><br>
+		<input type="text" id="nombre" name="nombre" value="Ricardo"><br>
+		<label for="apellido">Apellido</label><br>
+		<input type="text" id="apellido" name="apellido" value="Franco"><br><br>
+		<input type="submit" name="Submit">
+	</fieldset>
+</form>
+	
 </body>
 </html>
