@@ -4,38 +4,57 @@
 	<title></title>
 </head>
 <body>
-	<h2>Codigo computadora</h2>
-	<p>Programando codigo</p>
-	<code>
-		x=7;
-		y=10;
-		z=x+y;
-	</code>
-	<hr>
-	<pre>
-	<code>
-		x=7;
-		y=10;
-		z=x+y;
-	</code>
-	</pre>
-	<hr>
-	<p>el Kbd representa un elemento de entrada</p>
-	<p>para guardardocumentos presione <kbd>Ctrl + S</kbd></p>
-	<hr>
-	<h2>Elemento samp</h2>
-	<p>El elemento de muestra representa la salida de un programa o sistema informático:</p>
-	<p>Si ingresa un valor incorrecto, el programa devolverá <samp> ¡Error!</samp></p>
-	<hr>
-	<h2>Elemento var</h2>
-	<p>einstein escribio: <var>E</var>=<var>mc</var><sup>2</sup>.</p>
-	<hr>
-	<h3>Prado Verde</h3>
-	<p>El combo mas viajero e importante del barrismo colombiano</p>
-	<figure>
-		<img src="fotografias/Logo PradoVerde.jpg" alt="Prado Verde" style="width: 50%">
-		<figcaption> Prado Verde por el mundo!!!</figcaption>
-	</figure>
+	<h2>Llenando formularios en html</h2>
+	<form action="/action_page.php">
+		<label for="nombre">Nombre</label><br/>
+		<input type="text" id="nombre" name="nombre" value="Ricardo"><br/>
+		<label for="apellido">Apellido</label><br/>
+		<input type="text" id="apellido" name="apellido" value="Franco"><br><br>
+		<input type="submit" name="Submit">
+	</form>
 
+	<p>si le das aceptar en el boton enviaras la informacion a la pagna /action_page.php </p>
+
+	<hr>
+	<h2>Radio button</h2>
+	<form>
+		<input type="radio"  id="hombre" name="genero" value="hombre">
+		<label for="hombre">Hombre</label><br>
+		<input type="radio" id="mujer" name="genero" value="mujer">
+		<label for="mujer">Mujer</label><br>
+		<input type="radio" id="otro" name="genero" value="otro">
+		<label for="otro">Otro</label><br>
+	</form>
+	<hr>
+	<h2>The form target attribute</h2>
+
+<p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<hr>
+<h2>Ingresando datos</h2>
+<form action="/action_page.phpp">
+	<label for="nombre">Nombre</label><br>
+	<input type="text" id="nombre" name="nombre"><br><br>
+	<input type="submit" name="Submit">
+</form>
+<hr>
+<h2>seleccionar elemento</h2>
+<p>como un checkbox</p>
+<form action="/action_page.php">
+	<label for="carros" name="carros"></label>
+	<select id="carros" name="carros">
+		<option value="bmw">BMW</option>
+		<option value="mercedez benz">Mercedes benz</option>
+		<option value="ferrari">Ferrari</option>
+	</select>
+	<input type="submit">
+</form>
 </body>
 </html>
