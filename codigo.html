@@ -4,47 +4,55 @@
 	<title></title>
 </head>
 <body style="background-color: green; color: white;">
-	
-<h2>seleccionar elemento</h2>
-<p>como un checkbox pero mostrando el tamaño de la eleccion y con posibilidad electiva de mas de 1 elemento</p>
+	<h2>listas elemnto</h2>
+<p>elementos especificos predefinidos en un buscador para ingresar</p>
+
 <form action="/action_page.php">
-	<label for="carros" name="carros"></label>
-	<select id="carros" name="carros" size="4" multiple>
-		<option value="seleccionar">seleccionar</option>
-		<option value="bmw">BMW</option>
-		<option value="mercedez benz">Mercedes benz</option>
-		<option value="ferrari">Ferrari</option>
-	</select>
+	<input list="browsers" name="browser">
+	<datalist id="browsers">
+		<option value="Firefox"></option>
+		<option value="Internet explorer"></option>
+		<option value="crome"></option>
+		<option value="Opera"></option>
+	</datalist>
 	<input type="submit">
 </form>
-<p>presionando la tecla control puedes elegir mas de una opcion</p>
-
 <hr>
-<h2>TExt area</h2>
-<p>ingresar text area</p>
-<form action="/action_page.php">
-	<textarea name="message" rows="5" cols="20"></textarea><!--tambien se puede hacer con codigo css cambiando rows y cols por:"width:200px;heigth:60px;"-->
-	<br><br>
-	<input type="submit" >
+<h2>salida de elemento</h2>
+<p>representa el resultado de un calculo</p>
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+	<input type="range" id="a" name="a" value="30">+100
+	<input type="number" id="b" name="b" value="50">=
+	<output name="x" for="a b"></output><br><br>
+	<input type="submit">
 	
 </form>
 <hr>
-<h2>elemento boton</h2>
-
-<button type="button" onclick="alert('somos un aviso en otra ventana')">aceptar</button>
-<hr>
-<h2>agrupando en un cuadro</h2>
-<p>agrupa toda la informacion de un formulario coo un fieldset</p>
+<h2>Password</h2>
+<p>ingresando password</p>
+<p>El boton restablecer lo que hace es volver los valores al original para que sean escritos nuevamente en caso de error</p>
 <form action="/action_page.php">
-	<fieldset style="background-color: blue">
-		<legend>Datos personales</legend>
-		<label for="nombre">Nombre</label><br>
-		<input type="text" id="nombre" name="nombre" value="Ricardo"><br>
-		<label for="apellido">Apellido</label><br>
-		<input type="text" id="apellido" name="apellido" value="Franco"><br><br>
-		<input type="submit" name="Submit">
+	<fieldset style="background-color: dodgerblue; color: black">
+	<label for="usuario">usuario</label><br>
+	<input type="text" id="usuario" name="usuario"><br>
+	<label for="pwd">contraseña</label><br>
+	<input type="password" id="pwd" name="pwd"><br><br>
+	<input type="submit">
+	<input type="reset" >
 	</fieldset>
 </form>
+<hr>
+<h2>check boxes</h2>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehiculo1" name="vehiculo1" value="bicicleta">
+  <label for="vehiculo1"> Tengo una bicicleta</label><br>
+  <input type="checkbox" id="vehiculo2" name="vehiculo2" value="Carro">
+  <label for="vehiculo2"> Tengo un carro</label><br>
+  <input type="checkbox" id="vehiculo3" name="vehiculo3" value="Barco">
+  <label for="vehiculo3"> Tengo un barco</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 	
 </body>
 </html>
